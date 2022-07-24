@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="StartView" customModule="BaumTestApp" customModuleProvider="target">
+            <connections>
+                <outlet property="startButton" destination="Lbd-rp-FGs" id="47h-OK-m1H"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Kan-UM-W82">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="597"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="Kan-UM-W82" secondAttribute="height" multiplier="138:199" id="7Nz-qm-qrf"/>
+                    </constraints>
+                </imageView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Lbd-rp-FGs">
+                    <rect key="frame" x="150" y="667" width="114" height="50"/>
+                    <color key="backgroundColor" red="0.20592275460000001" green="0.77812252660000003" blue="0.36958218409999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <state key="normal" title="Button"/>
+                    <buttonConfiguration key="configuration" style="plain" title="Start">
+                        <fontDescription key="titleFontDescription" type="system" pointSize="30"/>
+                    </buttonConfiguration>
+                </button>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="Kan-UM-W82" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="120-Ok-EBw"/>
+                <constraint firstItem="Kan-UM-W82" firstAttribute="trailing" secondItem="vUN-kp-3ea" secondAttribute="trailing" id="3oq-wn-4bk"/>
+                <constraint firstItem="Kan-UM-W82" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="9VA-7H-Kkk"/>
+                <constraint firstItem="Kan-UM-W82" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="Alj-4C-Q7f"/>
+                <constraint firstItem="Lbd-rp-FGs" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="TXf-cg-igE"/>
+                <constraint firstItem="Lbd-rp-FGs" firstAttribute="top" secondItem="Kan-UM-W82" secondAttribute="bottom" constant="70" id="f8U-kq-d1d"/>
+                <constraint firstItem="Lbd-rp-FGs" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="150" id="hPh-Bl-GPd"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="Lbd-rp-FGs" secondAttribute="trailing" constant="150" id="i9X-ks-60N"/>
+            </constraints>
+            <nil key="simulatedTopBarMetrics"/>
+            <nil key="simulatedBottomBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="137.68115942028987" y="99.776785714285708"/>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

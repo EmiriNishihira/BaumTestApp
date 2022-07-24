@@ -9,13 +9,21 @@
 /* Begin PBXBuildFile section */
 		FDB04F4E286C9BD9006EE102 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDB04F4D286C9BD9006EE102 /* AppDelegate.swift */; };
 		FDB04F50286C9BD9006EE102 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDB04F4F286C9BD9006EE102 /* SceneDelegate.swift */; };
-		FDB04F52286C9BD9006EE102 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDB04F51286C9BD9006EE102 /* ViewController.swift */; };
-		FDB04F55286C9BD9006EE102 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FDB04F53286C9BD9006EE102 /* Main.storyboard */; };
 		FDB04F57286C9BDA006EE102 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FDB04F56286C9BDA006EE102 /* Assets.xcassets */; };
 		FDB04F5A286C9BDA006EE102 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FDB04F58286C9BDA006EE102 /* LaunchScreen.storyboard */; };
 		FDB04F65286C9BDA006EE102 /* BaumTestAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDB04F64286C9BDA006EE102 /* BaumTestAppTests.swift */; };
 		FDB04F6F286C9BDA006EE102 /* BaumTestAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDB04F6E286C9BDA006EE102 /* BaumTestAppUITests.swift */; };
 		FDB04F71286C9BDA006EE102 /* BaumTestAppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDB04F70286C9BDA006EE102 /* BaumTestAppUITestsLaunchTests.swift */; };
+		FDEC172D288D104E00D7CF96 /* StartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDEC172B288D104E00D7CF96 /* StartViewController.swift */; };
+		FDEC172E288D104E00D7CF96 /* StartViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FDEC172C288D104E00D7CF96 /* StartViewController.xib */; };
+		FDEC1730288D122700D7CF96 /* StartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDEC172F288D122700D7CF96 /* StartView.swift */; };
+		FDEC1732288D123000D7CF96 /* StartView.xib in Resources */ = {isa = PBXBuildFile; fileRef = FDEC1731288D123000D7CF96 /* StartView.xib */; };
+		FDEC1734288D126000D7CF96 /* NibView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDEC1733288D126000D7CF96 /* NibView.swift */; };
+		FDEC1736288D126800D7CF96 /* NibView.xib in Resources */ = {isa = PBXBuildFile; fileRef = FDEC1735288D126800D7CF96 /* NibView.xib */; };
+		FDEC173C288D15DD00D7CF96 /* MenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDEC173B288D15DD00D7CF96 /* MenuView.swift */; };
+		FDEC173E288D15E900D7CF96 /* MenuView.xib in Resources */ = {isa = PBXBuildFile; fileRef = FDEC173D288D15E900D7CF96 /* MenuView.xib */; };
+		FDEC1743288D163D00D7CF96 /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDEC1741288D163D00D7CF96 /* MenuViewController.swift */; };
+		FDEC1744288D163D00D7CF96 /* MenuViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FDEC1742288D163D00D7CF96 /* MenuViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,8 +47,6 @@
 		FDB04F4A286C9BD9006EE102 /* BaumTestApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BaumTestApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FDB04F4D286C9BD9006EE102 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FDB04F4F286C9BD9006EE102 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		FDB04F51286C9BD9006EE102 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		FDB04F54286C9BD9006EE102 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		FDB04F56286C9BDA006EE102 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FDB04F59286C9BDA006EE102 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FDB04F5B286C9BDA006EE102 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -49,6 +55,16 @@
 		FDB04F6A286C9BDA006EE102 /* BaumTestAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BaumTestAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FDB04F6E286C9BDA006EE102 /* BaumTestAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaumTestAppUITests.swift; sourceTree = "<group>"; };
 		FDB04F70286C9BDA006EE102 /* BaumTestAppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaumTestAppUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		FDEC172B288D104E00D7CF96 /* StartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartViewController.swift; sourceTree = "<group>"; };
+		FDEC172C288D104E00D7CF96 /* StartViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = StartViewController.xib; sourceTree = "<group>"; };
+		FDEC172F288D122700D7CF96 /* StartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartView.swift; sourceTree = "<group>"; };
+		FDEC1731288D123000D7CF96 /* StartView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = StartView.xib; sourceTree = "<group>"; };
+		FDEC1733288D126000D7CF96 /* NibView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NibView.swift; sourceTree = "<group>"; };
+		FDEC1735288D126800D7CF96 /* NibView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NibView.xib; sourceTree = "<group>"; };
+		FDEC173B288D15DD00D7CF96 /* MenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuView.swift; sourceTree = "<group>"; };
+		FDEC173D288D15E900D7CF96 /* MenuView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MenuView.xib; sourceTree = "<group>"; };
+		FDEC1741288D163D00D7CF96 /* MenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
+		FDEC1742288D163D00D7CF96 /* MenuViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MenuViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,6 +92,51 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		FD6B0AC8287319F5005131D3 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				FDEC1733288D126000D7CF96 /* NibView.swift */,
+				FDEC1735288D126800D7CF96 /* NibView.xib */,
+				FDEC172F288D122700D7CF96 /* StartView.swift */,
+				FDEC1731288D123000D7CF96 /* StartView.xib */,
+				FDEC173B288D15DD00D7CF96 /* MenuView.swift */,
+				FDEC173D288D15E900D7CF96 /* MenuView.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		FD6B0AC9287319FF005131D3 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		FD6B0ACA28731A0C005131D3 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				FDEC172B288D104E00D7CF96 /* StartViewController.swift */,
+				FDEC172C288D104E00D7CF96 /* StartViewController.xib */,
+				FDEC1741288D163D00D7CF96 /* MenuViewController.swift */,
+				FDEC1742288D163D00D7CF96 /* MenuViewController.xib */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		FD6B0ACB28731A1A005131D3 /* Translator */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Translator;
+			sourceTree = "<group>";
+		};
+		FD6B0ACC28731E71005131D3 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		FDB04F41286C9BD9006EE102 = {
 			isa = PBXGroup;
 			children = (
@@ -99,10 +160,13 @@
 		FDB04F4C286C9BD9006EE102 /* BaumTestApp */ = {
 			isa = PBXGroup;
 			children = (
+				FD6B0ACC28731E71005131D3 /* Model */,
+				FD6B0AC9287319FF005131D3 /* ViewModel */,
+				FD6B0AC8287319F5005131D3 /* View */,
+				FD6B0ACB28731A1A005131D3 /* Translator */,
+				FD6B0ACA28731A0C005131D3 /* ViewController */,
 				FDB04F4D286C9BD9006EE102 /* AppDelegate.swift */,
 				FDB04F4F286C9BD9006EE102 /* SceneDelegate.swift */,
-				FDB04F51286C9BD9006EE102 /* ViewController.swift */,
-				FDB04F53286C9BD9006EE102 /* Main.storyboard */,
 				FDB04F56286C9BDA006EE102 /* Assets.xcassets */,
 				FDB04F58286C9BDA006EE102 /* LaunchScreen.storyboard */,
 				FDB04F5B286C9BDA006EE102 /* Info.plist */,
@@ -232,8 +296,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				FDB04F5A286C9BDA006EE102 /* LaunchScreen.storyboard in Resources */,
+				FDEC173E288D15E900D7CF96 /* MenuView.xib in Resources */,
 				FDB04F57286C9BDA006EE102 /* Assets.xcassets in Resources */,
-				FDB04F55286C9BD9006EE102 /* Main.storyboard in Resources */,
+				FDEC172E288D104E00D7CF96 /* StartViewController.xib in Resources */,
+				FDEC1736288D126800D7CF96 /* NibView.xib in Resources */,
+				FDEC1744288D163D00D7CF96 /* MenuViewController.xib in Resources */,
+				FDEC1732288D123000D7CF96 /* StartView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -258,9 +326,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FDB04F52286C9BD9006EE102 /* ViewController.swift in Sources */,
 				FDB04F4E286C9BD9006EE102 /* AppDelegate.swift in Sources */,
+				FDEC173C288D15DD00D7CF96 /* MenuView.swift in Sources */,
 				FDB04F50286C9BD9006EE102 /* SceneDelegate.swift in Sources */,
+				FDEC1743288D163D00D7CF96 /* MenuViewController.swift in Sources */,
+				FDEC172D288D104E00D7CF96 /* StartViewController.swift in Sources */,
+				FDEC1730288D122700D7CF96 /* StartView.swift in Sources */,
+				FDEC1734288D126000D7CF96 /* NibView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -297,14 +369,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		FDB04F53286C9BD9006EE102 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				FDB04F54286C9BD9006EE102 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		FDB04F58286C9BDA006EE102 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -442,7 +506,6 @@
 				INFOPLIST_FILE = BaumTestApp/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -470,7 +533,6 @@
 				INFOPLIST_FILE = BaumTestApp/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
