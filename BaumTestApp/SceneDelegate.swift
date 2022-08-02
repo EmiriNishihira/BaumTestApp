@@ -21,7 +21,8 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
                 //Windowをインスタンス化
                 window = UIWindow(windowScene: windowScene)
         let startVC = StartViewController.init(nibName: "StartViewController", bundle: nil)
-        window?.rootViewController = startVC
+        let navi = UINavigationController(rootViewController: startVC)
+        window?.rootViewController = navi
                 window?.makeKeyAndVisible()
     }
 

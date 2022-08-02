@@ -15,19 +15,33 @@ class MenuViewController: UIViewController {
         setUp()
     }
 
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        self.navigationController?.setNavigationBarHidden(false, animated: true)
+    }
+
     private func setUp() {
-
+        setButton()
     }
 
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    private func setButton() {
+        menuView.generalDiagnosis.addTarget(self, action: #selector(tappedGeneralDiagnosis), for: .touchUpInside)
     }
-    */
+
+    @objc func tappedGeneralDiagnosis() {
+        let generalVC = GeneralDiagnosisViewController()
+        let naviVC = UINavigationController(rootViewController: generalVC)
+        self.navigationController?.pushViewController(naviVC, animated: true)
+    }
+
+    private func setUpNavigationBar() {
+        self.navigationController?.navigationBar
+        self.navigationItem.leftBarButtonItem = UIBarButtonItem(barButtonSystemItem: .fastForward, target: self, action: #selector(tappedNavi))
+    }
+
+    @objc func tappedNavi() {
+        let menuVC = MenuViewController()
+
+    }
 
 }

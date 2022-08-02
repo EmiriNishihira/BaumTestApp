@@ -14,6 +14,8 @@
 		FDB04F65286C9BDA006EE102 /* BaumTestAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDB04F64286C9BDA006EE102 /* BaumTestAppTests.swift */; };
 		FDB04F6F286C9BDA006EE102 /* BaumTestAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDB04F6E286C9BDA006EE102 /* BaumTestAppUITests.swift */; };
 		FDB04F71286C9BDA006EE102 /* BaumTestAppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDB04F70286C9BDA006EE102 /* BaumTestAppUITestsLaunchTests.swift */; };
+		FDCC51FA2890154300B7357D /* GeneralDiagnosisViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDCC51F82890154300B7357D /* GeneralDiagnosisViewController.swift */; };
+		FDCC51FB2890154300B7357D /* GeneralDiagnosisViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FDCC51F92890154300B7357D /* GeneralDiagnosisViewController.xib */; };
 		FDEC172D288D104E00D7CF96 /* StartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDEC172B288D104E00D7CF96 /* StartViewController.swift */; };
 		FDEC172E288D104E00D7CF96 /* StartViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FDEC172C288D104E00D7CF96 /* StartViewController.xib */; };
 		FDEC1730288D122700D7CF96 /* StartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDEC172F288D122700D7CF96 /* StartView.swift */; };
@@ -55,6 +57,8 @@
 		FDB04F6A286C9BDA006EE102 /* BaumTestAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BaumTestAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FDB04F6E286C9BDA006EE102 /* BaumTestAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaumTestAppUITests.swift; sourceTree = "<group>"; };
 		FDB04F70286C9BDA006EE102 /* BaumTestAppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaumTestAppUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		FDCC51F82890154300B7357D /* GeneralDiagnosisViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeneralDiagnosisViewController.swift; sourceTree = "<group>"; };
+		FDCC51F92890154300B7357D /* GeneralDiagnosisViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GeneralDiagnosisViewController.xib; sourceTree = "<group>"; };
 		FDEC172B288D104E00D7CF96 /* StartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartViewController.swift; sourceTree = "<group>"; };
 		FDEC172C288D104E00D7CF96 /* StartViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = StartViewController.xib; sourceTree = "<group>"; };
 		FDEC172F288D122700D7CF96 /* StartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartView.swift; sourceTree = "<group>"; };
@@ -119,6 +123,8 @@
 				FDEC172C288D104E00D7CF96 /* StartViewController.xib */,
 				FDEC1741288D163D00D7CF96 /* MenuViewController.swift */,
 				FDEC1742288D163D00D7CF96 /* MenuViewController.xib */,
+				FDCC51F82890154300B7357D /* GeneralDiagnosisViewController.swift */,
+				FDCC51F92890154300B7357D /* GeneralDiagnosisViewController.xib */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -300,6 +306,7 @@
 				FDB04F57286C9BDA006EE102 /* Assets.xcassets in Resources */,
 				FDEC172E288D104E00D7CF96 /* StartViewController.xib in Resources */,
 				FDEC1736288D126800D7CF96 /* NibView.xib in Resources */,
+				FDCC51FB2890154300B7357D /* GeneralDiagnosisViewController.xib in Resources */,
 				FDEC1744288D163D00D7CF96 /* MenuViewController.xib in Resources */,
 				FDEC1732288D123000D7CF96 /* StartView.xib in Resources */,
 			);
@@ -331,6 +338,7 @@
 				FDB04F50286C9BD9006EE102 /* SceneDelegate.swift in Sources */,
 				FDEC1743288D163D00D7CF96 /* MenuViewController.swift in Sources */,
 				FDEC172D288D104E00D7CF96 /* StartViewController.swift in Sources */,
+				FDCC51FA2890154300B7357D /* GeneralDiagnosisViewController.swift in Sources */,
 				FDEC1730288D122700D7CF96 /* StartView.swift in Sources */,
 				FDEC1734288D126000D7CF96 /* NibView.swift in Sources */,
 			);
