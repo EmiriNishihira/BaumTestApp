@@ -11,20 +11,11 @@ class StartViewController: UIViewController {
 
     @IBOutlet weak var startView: StartView!
 
-
-
-
     override func viewDidLoad() {
         super.viewDidLoad()
         setStartButton()
 
     }
-
-    override func viewWillAppear(_ animated: Bool) {
-        super.viewWillAppear(animated)
-        self.navigationController?.setNavigationBarHidden(false, animated: true)
-    }
-
 
     private func setStartButton() {
         startView.startButton.addTarget(self, action: #selector(tappedStartButton), for: .touchUpInside)

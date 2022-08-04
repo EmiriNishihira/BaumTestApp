@@ -17,26 +17,25 @@ class MenuViewController: UIViewController {
 
     private func setUp() {
         setButton()
+        setNaviBackButton()
     }
 
     private func setButton() {
         menuView.generalDiagnosis.addTarget(self, action: #selector(tappedGeneralDiagnosis), for: .touchUpInside)
     }
 
+    private func setNaviBackButton() {
+        let backImage = UIImage(named: "backIcon")?.withRenderingMode(.alwaysOriginal)
+        navigationItem.leftBarButtonItem = UIBarButtonItem.init(image: backImage, style: .plain, target: self, action: #selector(tappedBackButton))
+    }
+
     @objc func tappedGeneralDiagnosis() {
         let generalVC = GeneralDiagnosisViewController()
-        let naviVC = UINavigationController(rootViewController: generalVC)
-        self.navigationController?.pushViewController(naviVC, animated: true)
+        generalVC.modalPresentationStyle = .fullScreen
+        self.present(generalVC, animated: true)
     }
 
-    private func setUpNavigationBar() {
-        self.navigationController?.navigationBar
-        self.navigationItem.leftBarButtonItem = UIBarButtonItem(barButtonSystemItem: .fastForward, target: self, action: #selector(tappedNavi))
+    @objc func tappedBackButton() {
+        self.navigationController?.popViewController(animated: true)
     }
-
-    @objc func tappedNavi() {
-        let menuVC = MenuViewController()
-
-    }
-
 }

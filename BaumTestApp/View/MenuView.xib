@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21208.1" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21191"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -11,7 +12,6 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MenuView" customModule="BaumTestApp" customModuleProvider="target">
             <connections>
                 <outlet property="adviceButton" destination="tGm-Ia-TeL" id="Dhp-BX-IIF"/>
-                <outlet property="detailedDiagnosis" destination="PLo-Dg-GKv" id="Tsp-pm-CEz"/>
                 <outlet property="everyoneTreeButton" destination="35P-EE-sV6" id="Qyb-dt-1xA"/>
                 <outlet property="generalDiagnosis" destination="fT7-c8-iHN" id="5eM-0q-UzZ"/>
             </connections>
@@ -28,28 +28,11 @@
                             <rect key="frame" x="0.0" y="0.0" width="265" height="61"/>
                             <color key="backgroundColor" systemColor="systemGreenColor"/>
                             <constraints>
-                                <constraint firstAttribute="width" secondItem="fT7-c8-iHN" secondAttribute="height" multiplier="265:61" id="pfV-Bp-UAu"/>
+                                <constraint firstAttribute="width" secondItem="fT7-c8-iHN" secondAttribute="height" multiplier="265:61" id="bkm-Gf-t7o"/>
                             </constraints>
                             <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <state key="normal" title="Button"/>
-                            <buttonConfiguration key="configuration" style="plain" title="普通診断">
-                                <fontDescription key="titleFontDescription" type="system" pointSize="30"/>
-                            </buttonConfiguration>
-                            <userDefinedRuntimeAttributes>
-                                <userDefinedRuntimeAttribute type="number" keyPath="counerRadius">
-                                    <integer key="value" value="15"/>
-                                </userDefinedRuntimeAttribute>
-                            </userDefinedRuntimeAttributes>
-                        </button>
-                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PLo-Dg-GKv">
-                            <rect key="frame" x="0.0" y="81" width="265" height="61"/>
-                            <color key="backgroundColor" systemColor="systemGreenColor"/>
-                            <constraints>
-                                <constraint firstAttribute="width" secondItem="PLo-Dg-GKv" secondAttribute="height" multiplier="265:61" id="ZsG-nb-hhX"/>
-                            </constraints>
-                            <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                            <state key="normal" title="Button"/>
-                            <buttonConfiguration key="configuration" style="plain" title="精密診断">
+                            <buttonConfiguration key="configuration" style="plain" title="診断">
                                 <fontDescription key="titleFontDescription" type="system" pointSize="30"/>
                             </buttonConfiguration>
                             <userDefinedRuntimeAttributes>
@@ -59,10 +42,10 @@
                             </userDefinedRuntimeAttributes>
                         </button>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tGm-Ia-TeL">
-                            <rect key="frame" x="0.0" y="162" width="265" height="61"/>
+                            <rect key="frame" x="0.0" y="71" width="265" height="61"/>
                             <color key="backgroundColor" systemColor="systemGreenColor"/>
                             <constraints>
-                                <constraint firstAttribute="width" secondItem="tGm-Ia-TeL" secondAttribute="height" multiplier="265:61" id="34V-iW-dQ3"/>
+                                <constraint firstAttribute="width" secondItem="tGm-Ia-TeL" secondAttribute="height" multiplier="265:61" id="CUx-hO-qfE"/>
                             </constraints>
                             <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <state key="normal" title="Button"/>
@@ -76,10 +59,10 @@
                             </userDefinedRuntimeAttributes>
                         </button>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="35P-EE-sV6">
-                            <rect key="frame" x="0.0" y="243" width="265" height="61"/>
+                            <rect key="frame" x="0.0" y="142" width="265" height="61"/>
                             <color key="backgroundColor" systemColor="systemGreenColor"/>
                             <constraints>
-                                <constraint firstAttribute="width" secondItem="35P-EE-sV6" secondAttribute="height" multiplier="265:61" id="FTU-eH-Ny1"/>
+                                <constraint firstAttribute="width" secondItem="35P-EE-sV6" secondAttribute="height" multiplier="265:61" id="p1P-2d-3lU"/>
                             </constraints>
                             <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <state key="normal" title="Button"/>
@@ -95,18 +78,15 @@
                     </subviews>
                     <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     <constraints>
-                        <constraint firstItem="PLo-Dg-GKv" firstAttribute="top" secondItem="fT7-c8-iHN" secondAttribute="bottom" constant="20" id="1JV-eY-5dS"/>
-                        <constraint firstItem="35P-EE-sV6" firstAttribute="leading" secondItem="75u-85-Pz1" secondAttribute="leading" id="1kb-qB-Fqo"/>
-                        <constraint firstItem="35P-EE-sV6" firstAttribute="top" secondItem="tGm-Ia-TeL" secondAttribute="bottom" constant="20" id="3p6-Dr-T8W"/>
-                        <constraint firstAttribute="trailing" secondItem="fT7-c8-iHN" secondAttribute="trailing" id="BPH-ZH-UcH"/>
-                        <constraint firstAttribute="trailing" secondItem="PLo-Dg-GKv" secondAttribute="trailing" id="EuN-7I-T0p"/>
-                        <constraint firstItem="fT7-c8-iHN" firstAttribute="leading" secondItem="75u-85-Pz1" secondAttribute="leading" id="Fmg-w9-VPb"/>
-                        <constraint firstAttribute="trailing" secondItem="35P-EE-sV6" secondAttribute="trailing" id="GhH-Ui-HjE"/>
-                        <constraint firstItem="tGm-Ia-TeL" firstAttribute="top" secondItem="PLo-Dg-GKv" secondAttribute="bottom" constant="20" id="L7m-WE-7cb"/>
-                        <constraint firstItem="fT7-c8-iHN" firstAttribute="top" secondItem="75u-85-Pz1" secondAttribute="top" id="QYS-xt-50s"/>
-                        <constraint firstAttribute="trailing" secondItem="tGm-Ia-TeL" secondAttribute="trailing" id="eW9-36-KVo"/>
-                        <constraint firstItem="tGm-Ia-TeL" firstAttribute="leading" secondItem="75u-85-Pz1" secondAttribute="leading" id="xZe-Mz-Cbv"/>
-                        <constraint firstItem="PLo-Dg-GKv" firstAttribute="leading" secondItem="75u-85-Pz1" secondAttribute="leading" id="zCQ-iT-80U"/>
+                        <constraint firstItem="tGm-Ia-TeL" firstAttribute="leading" secondItem="75u-85-Pz1" secondAttribute="leading" id="ABT-0b-sw0"/>
+                        <constraint firstItem="fT7-c8-iHN" firstAttribute="leading" secondItem="75u-85-Pz1" secondAttribute="leading" id="DQ2-tH-E15"/>
+                        <constraint firstItem="35P-EE-sV6" firstAttribute="top" secondItem="tGm-Ia-TeL" secondAttribute="bottom" constant="10" id="RXB-v0-Rb3"/>
+                        <constraint firstItem="35P-EE-sV6" firstAttribute="leading" secondItem="75u-85-Pz1" secondAttribute="leading" id="XaW-w4-bnk"/>
+                        <constraint firstAttribute="trailing" secondItem="35P-EE-sV6" secondAttribute="trailing" id="eFw-Ie-dzE"/>
+                        <constraint firstAttribute="trailing" secondItem="fT7-c8-iHN" secondAttribute="trailing" id="eXw-cO-Do6"/>
+                        <constraint firstItem="tGm-Ia-TeL" firstAttribute="top" secondItem="fT7-c8-iHN" secondAttribute="bottom" constant="10" id="nKj-3n-L9H"/>
+                        <constraint firstAttribute="trailing" secondItem="tGm-Ia-TeL" secondAttribute="trailing" id="nV2-cD-rIU"/>
+                        <constraint firstItem="fT7-c8-iHN" firstAttribute="top" secondItem="75u-85-Pz1" secondAttribute="top" id="pBl-Bh-XKd"/>
                     </constraints>
                 </view>
             </subviews>
